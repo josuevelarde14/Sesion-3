@@ -12,7 +12,7 @@
             <li>Chifa</li>
         </ul>
         <h2>Imagen de mi mascota</h2>
-        <img src="https://live.hsmob.io/storage/images/wakyma.com/wakyma.com_blog_wp-co_cuidados-necesarios-del-perro-shih-tzu.jpg" alt="Mi perro en el parque" />
+        <div class="col"><img src="https://live.hsmob.io/storage/images/wakyma.com/wakyma.com_blog_wp-co_cuidados-necesarios-del-perro-shih-tzu.jpg" alt="mi perrito" /> </div>
         
         <h2>Los lugares que quiero visitar</h2>
         <ol>
@@ -34,6 +34,42 @@
                 background-size: cover;
                 color: black
             }
+            @media screen and (min-width: 768px) {
+                .container {
+                    width: 768px;
+                    margin: 0 auto;
+                }
+            /* Define el ancho de las columnas */
+                .col {
+                    float: left;
+                    width: 50%;
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                .container {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                .col {
+                    float: none;
+                    width: 100%;
+                }
+            }
+
+            .container {
+                padding: 20px;
+                border: 1px solid #ccc;
+                background-color: #f5f5f5;
+            }
+
+            .col {
+                padding: 10px;
+                border: 1px solid #999;
+                background-color: #fff;
+                box-sizing: border-box;
+            } 
         </style>
     </body>
 </html>
